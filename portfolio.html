@@ -29,8 +29,11 @@
             <a href="./index.html" class="logo">
               <span class="logo-color">Web</span>Studio
             </a>
+
             <ul class="nav-menu list">
-              <li><a href="./index.html" class="nav-link">Studio</a></li>
+              <li>
+                <a href="./index.html" class="nav-link">Studio</a>
+              </li>
               <li>
                 <a href="./portfolio.html" class="nav-link current"
                   >Portfolio</a
@@ -39,6 +42,12 @@
               <li><a href="" class="nav-link">Contacts</a></li>
             </ul>
           </nav>
+
+          <button type="button" class="btn-mobile js-open-menu">
+            <svg class="icon-burger" width="32" height="22">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
 
           <address class="address">
             <ul class="contact-menu list">
@@ -54,6 +63,79 @@
               </li>
             </ul>
           </address>
+        </div>
+      </div>
+
+      <div class="mob-box js-menu-container">
+        <div class="container mob-menu">
+          <button type="button" class="btn-mobil-close js-close-menu">
+            <svg class="icon-close-mob" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav>
+            <ul class="nav-menu-mobil list">
+              <li>
+                <a href="./index.html" class="nav-link-mobil">Studio</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="nav-link-mobil current"
+                  >Portfolio</a
+                >
+              </li>
+              <li><a href="" class="nav-link-mobil">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <address>
+              <ul class="contact-menu-mobil list">
+                <li class="tel-cont">
+                  <a href="tel:+110001111111" class="contact-link-mobil tel"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contact-link-mobil mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="socials-list-mob list">
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -79,11 +161,32 @@
             <li class="portfolio-panel">
               <a href="" class="portfolio-link">
                 <div class="overlay-box">
-                  <img
-                    src="./images/img08.jpg"
-                    alt="portfolio picture"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img08-desk.jpg    1x,
+                        ./images/img08-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/img08-tabl.jpg    1x,
+                        ./images/img08-tabl@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img08-mob.jpg    1x,
+                        ./images/img08-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./images/img08.jpg" alt="portfolio picture" />
+                  </picture>
+
                   <div class="content-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -103,11 +206,31 @@
             <li class="portfolio-panel">
               <a href="" class="portfolio-link">
                 <div class="overlay-box">
-                  <img
-                    src="./images/img07.jpg"
-                    alt="portfolio picture"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img07-desk.jpg    1x,
+                        ./images/img07-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img07-tabl.jpg    1x,
+                        ./images/img07-tabl@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img07-mob.jpg    1x,
+                        ./images/img07-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/img07.jpg" alt="portfolio picture" />
+                  </picture>
                   <div class="content-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -126,11 +249,30 @@
             <li class="portfolio-panel">
               <a href="" class="portfolio-link">
                 <div class="overlay-box">
-                  <img
-                    src="./images/img06.jpg"
-                    alt="portfolio picture"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img06-desk.jpg    1x,
+                        ./images/img06-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img06-tabl.jpg    1x,
+                        ./images/img06-tabl@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img06-mob.jpg    1x,
+                        ./images/img06-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./images/img06.jpg" alt="portfolio picture" />
+                  </picture>
                   <div class="content-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -148,11 +290,30 @@
             <li class="portfolio-panel">
               <a href="" class="portfolio-link">
                 <div class="overlay-box">
-                  <img
-                    src="./images/img05.jpg"
-                    alt="portfolio picture"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img05-desk.jpg    1x,
+                        ./images/img05-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img05-tabl.jpg    1x,
+                        ./images/img05-tabl@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img05-mob.jpg    1x,
+                        ./images/img05-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./images/img05.jpg" alt="portfolio picture" />
+                  </picture>
                   <div class="content-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -170,11 +331,30 @@
             <li class="portfolio-panel">
               <a href="" class="portfolio-link">
                 <div class="overlay-box">
-                  <img
-                    src="./images/img04.jpg"
-                    alt="portfolio picture"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img04-desk.jpg    1x,
+                        ./images/img04-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img04-tabl.jpg    1x,
+                        ./images/img04-tabl@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img04-mob.jpg    1x,
+                        ./images/img04-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./images/img04.jpg" alt="portfolio picture" />
+                  </picture>
                   <div class="content-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -194,11 +374,30 @@
             <li class="portfolio-panel">
               <a href="" class="portfolio-link">
                 <div class="overlay-box">
-                  <img
-                    src="./images/img03.jpg"
-                    alt="portfolio picture"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img03-desk.jpg    1x,
+                        ./images/img03-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img03-tabl.jpg    1x,
+                        ./images/img03-tabl@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img03-mob.jpg    1x,
+                        ./images/img03-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./images/img03.jpg" alt="portfolio picture" />
+                  </picture>
                   <div class="content-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -217,11 +416,30 @@
               <a href="" class="portfolio-link">
                 <div class="overlay-box">
                   <div class="overlay-box">
-                    <img
-                      src="./images/img02.jpg"
-                      alt="portfolio picture"
-                      width="360"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/img02-desk.jpg    1x,
+                          ./images/img02-desk@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/img02-tabl.jpg    1x,
+                          ./images/img02-tabl@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/img02-mob.jpg    1x,
+                          ./images/img02-mob@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img src="./images/img02.jpg" alt="portfolio picture" />
+                    </picture>
                     <div class="content-overlay">
                       <p class="overley-text">
                         14 Stylish and User-Friendly App Design Concepts · Task
@@ -249,11 +467,30 @@
             <li class="portfolio-panel">
               <a href="" class="portfolio-link">
                 <div class="overlay-box">
-                  <img
-                    src="./images/img01.jpg"
-                    alt="portfolio picture"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img01-desk.jpg    1x,
+                        ./images/img01-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img01-tabl.jpg    1x,
+                        ./images/img01-tabl@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img01-mob.jpg    1x,
+                        ./images/img01-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./images/img01.jpg" alt="portfolio picture" />
+                  </picture>
                   <div class="content-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -271,11 +508,30 @@
             <li class="portfolio-panel">
               <a href="" class="portfolio-link">
                 <div class="overlay-box">
-                  <img
-                    src="./images/img00.jpg"
-                    alt="portfolio picture"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img00-desk.jpg    1x,
+                        ./images/img00-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img00-tabl.jpg    1x,
+                        ./images/img00-tabl@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img00-mob.jpg    1x,
+                        ./images/img00-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./images/img00.jpg" alt="portfolio picture" />
+                  </picture>
                   <div class="content-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -297,7 +553,7 @@
 
     <!--footer-->
     <footer class="footer-page">
-      <div class="container footer">
+      <div class="container more-padding footer">
         <div class="footer-box">
           <a href="./index.html" class="logo">
             <span class="logo-color">Web</span
@@ -344,7 +600,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer-form-box">
           <h3 class="subtitle-footer">Subscribe</h3>
           <form name="subscribe" class="form-box">
             <label for="email" class="visually-hidden"> Email</label>
@@ -360,5 +616,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
